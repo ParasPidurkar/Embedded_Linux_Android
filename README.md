@@ -31,23 +31,6 @@ BootROM (on-chip)
 
 ---
 
-## Mermaid Diagram
-
-> If your Markdown viewer supports Mermaid:
-
-```mermaid
-flowchart LR
-  R[BootROM (on-chip)] --> B2[BL2 (vendor preloader)]
-  B2 --> B2E[BL2E (extended)]
-  B2E --> B2X[BL2X (helper)]
-  B2X --> BL31[BL31 (TF-A, EL3)]
-  BL31 --> BL32[BL32 (TEE, S-EL1)]
-  BL31 --> BL33Z[BL33Z (U-Boot stub)]
-  BL33Z --> BL33[BL33 (U-Boot)]
-  BL33 --> K[Kernel]
-
-
-
 
 ## SC2 Boot Flow & Memory Map
 
